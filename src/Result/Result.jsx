@@ -15,7 +15,9 @@ export const Result = ({ result, number1, number2 }) => {
 
   return (
     <>
-      <div className="result">{result !== "Infinity" ? result : " "}</div>
+      <div className="result">
+        Result: {result !== "Infinity" ? result : " "}
+      </div>
     </>
   );
 };
