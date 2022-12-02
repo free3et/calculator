@@ -16,5 +16,8 @@ input {
   &:focus-visible {
     outline: 1px solid #535bf2;
   }
+  &.error{
+    border: 2px solid #a40048;
+  }
 }
 

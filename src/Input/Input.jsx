@@ -1,18 +1,22 @@
-import stylesInput from "./Input.modules.scss";
+import React from "react";
+import "./Input.modules.scss";
+import { useState, useRef } from "react";
 
-export const Input = ({ onNumberChange }) => {
+export const Input = ({ onNumberChange, value, id }) => {
   const numberChanged = (event) => {
-    onNumberChange(+event.target.value);
+    onNumberChange(String(event.target.value).replace(/[,]/g, "."));
   };
 
   return (
     <div className="form_group">
+      <label>Enter the number:</label>
       <input
         type="text"
-        placeholder={1}
+        placeholder="1"
         name="number"
-        //pattern="[0-9]+([\,][0-9]{1,2})?"
-        onChange={numberChanged}
+        id={id}
+        defaultValue={value}
+        onBlur={numberChanged}
       />
     </div>
   );
