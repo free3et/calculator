@@ -30,7 +30,7 @@ function App() {
       Number.isInteger(devided)
         ? devided
         : devided / 1000 < 0.001
-        ? devided.toFixed(6)
+        ? devided.toFixed(8)
         : devided.toFixed(2)
     );
   };
