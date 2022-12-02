@@ -1,6 +1,47 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    color: #6e84de;
+    font-size: 1.75em;
+    line-height: 2;
+}
+
+.result {
+  font-size: 1.15em;
+  line-height: 2.5;
+  color: #2fd883;
+}
+
+.error {
+  color: #d10042;
+  font-size: 1.2em;
+}
+
+button {
+  box-sizing: border-box;
+    margin: 5px auto;
+    padding: 0.6em 1.2em;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: #7f78ac;
+    color: rgb(255, 255, 255);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1em;
+    cursor: pointer;
+    transition: border 0s ease 0s, background-color 0.3s ease 0s;
+}
+button:hover {
+  border: 1px solid rgb(75, 21, 73);
+  background-color: rgb(96, 34, 111);
+  color: rgb(255, 255, 255);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
